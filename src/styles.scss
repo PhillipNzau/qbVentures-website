@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "zonaBold";
+    font-style: normal;
+    src: url(assets/fonts/zonaPro-Bold.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "zonaExtraBold";
+    font-style: normal;
+    src: url(assets/fonts/zonaPro-ExtraBold.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "zonaLight";
+    font-style: normal;
+    src: url(assets/fonts/zonaPro-Light.woff) format("woff");
+  }
+  @font-face {
+    font-family: "zonaRegular";
+    font-style: normal;
+    src: url(assets/fonts/zonaPro-Regular.woff) format("woff");
+  }
