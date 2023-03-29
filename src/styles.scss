@@ -28,6 +28,8 @@
 
   html {
     @apply font-textFont bg-myBg;
+    // font-size: 62.5%; // 1rem = 10px
+
   }
 
  /* Preferred box-sizing value */
@@ -38,3 +40,4 @@
   padding: 0;
   box-sizing: border-box;
 }
+
