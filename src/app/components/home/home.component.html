@@ -1,6 +1,7 @@
+<!-- Hero -->
 <section
   id="heroSection"
-  class="px-36 py-16 bg-primaryBlack lg:h-[846px] text-primaryWhite"
+  class="px-48 py-16 bg-primaryBlack lg:h-[846px] text-primaryWhite"
 >
   <div class="flex items-center justify-between">
     <img
@@ -29,6 +30,7 @@
   </h1>
 </section>
 
+<!-- Studio & Capital -->
 <section
   class="w-3/4 h-[500px] bg-primaryGreen absolute right-0 top-1/2 flex items-center"
 >
@@ -84,12 +86,14 @@
   </div>
 </section>
 
-<section class="mt-48">
+<!-- Portfolio ventures -->
+<section class="my-48">
   <h1 class="font-headingExtraBold text-[40px] text-center">
     PORTFOLIO VENTURES
   </h1>
 
-  <div class="flex items-center justify-between px-48 space-x-6">
+  <!-- Naiparq -->
+  <div class="flex items-center justify-between px-48 space-x-6 mt-24">
     <div class="w-1/2">
       <img
         src="./assets/imgs/naiparq.svg"
@@ -125,4 +129,144 @@
       </iframe>
     </div>
   </div>
+
+  <!-- Prodtrace -->
+  <div class="flex items-center justify-between px-48 space-x-6 mt-24">
+    <div class="w-1/2">
+      <iframe
+        width="100%"
+        height="345"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      >
+      </iframe>
+    </div>
+    <div class="w-1/2">
+      <img
+        src="./assets/imgs/naiparq.svg"
+        alt="naiparq logo"
+        width="228"
+        height="60"
+      />
+      <p class="py-5">
+        Naiparq is a startup comany on a misson to alleviate commuter pain in
+        African cities by developing innovative solutions that leverage
+        technology to help motorists find and reserve parking slots. Naiparq
+        solutions are available as both web and mobile applications designed for
+        parking operators and motorists respectively.
+      </p>
+      <div
+        class="flex items-center justify-between border-2 rounded-full border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+      >
+        Learn More
+        <img
+          src="./assets/imgs/arrowRightDark.svg"
+          alt="arrow right"
+          width="24"
+          height="24"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Naiparq -->
+  <div class="flex items-center justify-between px-48 space-x-6 mt-24">
+    <div class="w-1/2">
+      <img
+        src="./assets/imgs/loita.svg"
+        alt="naiparq logo"
+        width="135"
+        height="60"
+      />
+      <p class="py-5">
+        Loita is a startup company that seeks to revolutionize asset and
+        inventory tracking and management services. To this end, Loita is
+        actively developing a management system that combines real-time
+        geolocation reporting with real-time analytics of telematics data to
+        give asset and inventory managers situational awareness and insights
+        that can be used to guide critical decisions. The system also features
+        advanced behavioral analytics through computer vision to assess
+        personnel behavior and perform automated reporting based on user
+        preference.
+      </p>
+      <div
+        class="flex items-center justify-between border-2 rounded-full border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+      >
+        Learn More
+        <img
+          src="./assets/imgs/arrowRightDark.svg"
+          alt="arrow right"
+          width="24"
+          height="24"
+        />
+      </div>
+    </div>
+    <div class="w-1/2">
+      <iframe
+        width="100%"
+        height="345"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      >
+      </iframe>
+    </div>
+  </div>
 </section>
+
+<!-- Work with us -->
+<section class="bg-primaryBlack py-24 px-48">
+  <h1 class="text-lightGreen text-6xl font-headingExtraBold">WORK WITH US</h1>
+  <p class="text-primaryWhite text-2xl w-1/2 my-6">
+    We welcome the opportunity to meet, dialogue, and partner in pursuit of
+    value creation for companies and investors.
+  </p>
+  <div
+    class="flex items-center justify-around rounded-full py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform bg-lightGreen hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+  >
+    Contact
+    <img
+      src="./assets/imgs/arrowRightDark.svg"
+      alt="arrow right"
+      width="24"
+      height="24"
+    />
+  </div>
+</section>
+
+<!-- Latest news -->
+<section class="px-48 my-32">
+  <div class="my-6 flex items-center justify-between">
+    <h1 class="font-headingExtraBold text-[40px]">LATEST NEWS</h1>
+    <div
+      class="flex items-center justify-around border-2 rounded-full border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+    >
+      Read More
+      <img
+        src="./assets/imgs/arrowRightDark.svg"
+        alt="arrow right"
+        width="24"
+        height="24"
+      />
+    </div>
+  </div>
+  <div class="flex items-center space-x-6">
+    <app-news-card
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
+    ></app-news-card>
+    <app-news-card
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
+    ></app-news-card>
+
+    <app-news-card
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
+    ></app-news-card>
+    <app-news-card
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
+    ></app-news-card>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class=""></footer>
