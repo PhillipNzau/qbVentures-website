@@ -29,3 +29,12 @@
   html {
     @apply font-textFont bg-myBg;
   }
+
+ /* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
