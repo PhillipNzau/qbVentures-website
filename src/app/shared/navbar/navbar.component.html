@@ -4,15 +4,17 @@
   <ng-container *ngIf="isHome">
     <img
       src="./assets/imgs/qbLogo.svg"
-      class="w-40 h-10 md:w-56"
+      class="w-40 h-10 md:w-56 hover:cursor-pointer"
       alt="qbventures logo"
+      [routerLink]="['/']"
     />
   </ng-container>
   <ng-container *ngIf="!isHome">
     <img
       src="./assets/imgs/qbLogoBlack.svg"
-      class="w-40 h-10 md:w-56"
+      class="w-40 h-10 md:w-56 hover:cursor-pointer"
       alt="qbventures logo"
+      [routerLink]="['/']"
     />
   </ng-container>
 
@@ -22,23 +24,32 @@
     <li
       class="text-center px-4 py-2 relative before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
       [routerLink]="['/about']"
-      [routerLinkActive]="['bg-black', 'text-white']"
+      [routerLinkActive]="['font-headingFont', '']"
       [routerLinkActiveOptions]="{ exact: true }"
     >
       <a>About</a>
     </li>
     <li
       class="text-center px-4 py-2 relative before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+      [routerLink]="['/studio']"
+      [routerLinkActive]="['font-headingFont', '']"
+      [routerLinkActiveOptions]="{ exact: true }"
     >
       <a>Studio</a>
     </li>
     <li
       class="text-center px-4 py-2 relative before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+      [routerLink]="['/capital']"
+      [routerLinkActive]="['font-headingFont', '']"
+      [routerLinkActiveOptions]="{ exact: true }"
     >
       <a>Capital</a>
     </li>
     <li
       class="text-center px-4 py-2 relative before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+      [routerLink]="['/team']"
+      [routerLinkActive]="['font-headingFont', '']"
+      [routerLinkActiveOptions]="{ exact: true }"
     >
       <a>Team</a>
     </li>
