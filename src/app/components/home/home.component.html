@@ -69,15 +69,30 @@
       wildly successful company
     </p>
     <div
-      class="flex items-center justify-between border-2 rounded-full border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+      class="group flex items-center justify-between border-2 rounded-full bg-primaryBlack text-primaryWhite border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryBlack hover:bg-transparent"
     >
       Learn More
-      <img
-        src="./assets/imgs/arrowRightDark.svg"
-        alt="arrow right"
+      <svg
+        class="stroke-white group-hover:stroke-primaryBlack"
         width="24"
         height="24"
-      />
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.75 12H20.25"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13.5 5.25L20.25 12L13.5 18.75"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   </div>
 
@@ -95,16 +110,30 @@
       industries and change the world.
     </p>
     <div
-      class="flex items-center justify-between border-2 rounded-full bg-primaryBlack text-primaryWhite border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+      class="group flex items-center justify-between border-2 rounded-full bg-primaryBlack text-primaryWhite border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryBlack hover:bg-transparent"
     >
       Learn More
-      <img
-        class="bg-primaryBlack"
-        src="./assets/imgs/arrowRightLight.svg"
-        alt="arrow right"
+      <svg
+        class="stroke-white group-hover:stroke-primaryBlack"
         width="24"
         height="24"
-      />
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.75 12H20.25"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13.5 5.25L20.25 12L13.5 18.75"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   </div>
   <!-- mask -->
@@ -273,7 +302,7 @@
 </section>
 
 <!-- Latest news -->
-<section class="px-10 md:px-20 lg:px-48 my-12 lg:my-32">
+<section class="px-10 md:px-20 my-12 lg:my-32">
   <div class="my-6 flex items-center justify-between">
     <h1 class="font-headingExtraBold text-2xl md:text-[40px]">LATEST NEWS</h1>
     <div
@@ -287,7 +316,14 @@
       />
     </div>
   </div>
-  <div class="flex items-center space-x-6">
+  <div
+    class="flex items-center justify-between gap-x-6 flex-col lg:flex-row gap-y-6 lg:gap-y-0"
+  >
+    <app-news-card
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
+    ></app-news-card>
+
     <app-news-card
       title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
