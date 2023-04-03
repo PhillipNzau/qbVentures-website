@@ -26,7 +26,7 @@
     />
     <!-- mask -->
     <img
-      class="absolute -bottom-3 rotate-180 2xl:-top-1 -left-1 w-[120px] h-[70px] 2xl:w-[198px] 2xl:h-[85px]"
+      class="absolute -bottom-3 rotate-180 2xl:-top-1 -left-1 w-[120px] h-[70px]"
       src="./assets/imgs/mask.webp"
       alt="mask img"
     />
@@ -139,14 +139,28 @@
   <div class="my-6 flex items-center justify-between">
     <h1 class="font-headingExtraBold text-2xl md:text-[40px]">LATEST NEWS</h1>
     <div
-      class="flex items-center justify-around border-2 rounded-full border-primaryBlack text-[9px] md:text-base p-2 md:py-4 md:px-5 md:w-44 cursor-pointer transition-all duration-500 transform hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite"
+      class="group flex items-center justify-around border-2 rounded-full border-primaryBlack text-[9px] md:text-base p-2 md:py-4 md:px-5 md:w-44 cursor-pointer transition-all duration-500 transform hover:bg-primaryBlack hover:text-primaryWhite"
     >
       Read More
-      <img
-        src="./assets/imgs/arrowRightDark.svg"
-        alt="arrow right"
-        class="h-4 w-4 md:h-6 md:w-6"
-      />
+      <svg
+        class="stroke-primaryBlack group-hover:stroke-primaryWhite h-4 w-4 md:h-6 md:w-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.75 12H20.25"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13.5 5.25L20.25 12L13.5 18.75"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   </div>
   <div

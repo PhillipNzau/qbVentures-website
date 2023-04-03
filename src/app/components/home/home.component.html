@@ -287,22 +287,36 @@
     value creation for companies and investors.
   </p>
   <div
-    class="flex items-center justify-around rounded-full py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform bg-lightGreen hover:bg-primaryWhite hover:text-primaryBlack hover:border-primaryWhite font-headingFont"
+    class="group flex items-center justify-around rounded-full py-4 px-5 w-44 mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-primaryWhite hover:bg-lightGreen hover:text-primaryBlack border-lightGreen border font-headingFont"
   >
     Contact
-    <img
-      src="./assets/imgs/arrowRightDark.svg"
-      alt="arrow right"
-      width="24"
-      height="24"
-    />
+
+    <svg
+      class="stroke-primaryWhite transition-all duration-300 ease-in-out group-hover:stroke-primaryBlack"
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.54376 8.13342H13.6253"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.09198 3.60004L13.6254 8.13341L9.09198 12.6668"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   </div>
   <!-- mask -->
   <img
-    class="absolute -bottom-1 right-0"
+    class="absolute -bottom-1 right-0 w-[120px] h-[70px]"
     src="./assets/imgs/mask.webp"
-    width="198"
-    height="85"
     alt="mask img"
   />
 </section>
