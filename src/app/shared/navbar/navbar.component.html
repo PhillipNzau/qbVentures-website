@@ -1,5 +1,5 @@
 <div
-  class="z-10 xl:px-48 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
+  class="z-0 xl:px-48 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
 >
   <ng-container *ngIf="isHome">
     <img
@@ -95,8 +95,8 @@
 </div>
 
 <div
-  [ngClass]="{ 'z-0 opacity-0 h-0': !isMenuOpen }"
-  class="absolute top-0 h-full opacity-0 w-screen min-h-full transition-all duration-500 ease-in bg-black"
+  [ngClass]="{ 'z-0 opacity-100 top-[0]': isMenuOpen }"
+  class="absolute -top-[1200px] opacity-0 w-screen min-h-full transition-all duration-500 ease-in bg-black"
 >
   <div class="flex justify-end p-6">
     <svg

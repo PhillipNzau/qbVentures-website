@@ -15,6 +15,9 @@ module.exports = {
         'textLightFont': ['zonaLight', 'sans-serif'],
         'headingFont': ['zonaBold', 'serif'],
         'headingExtraBold': ['zonaExtraBold', 'serif'],
+      },
+      backgroundImage:{
+        'home-pattern': "url('/src/assets/imgs/homeBg.png')"
       }
     },
   },
