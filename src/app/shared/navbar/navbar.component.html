@@ -83,7 +83,11 @@
     >
       <a>Team</a>
     </li>
-    <li>
+    <li
+      [routerLink]="['/contact']"
+      [routerLinkActive]="['font-headingFont', '']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <a
         class="bg-primaryBlack py-3 px-4 rounded-full text-white font-headingFont"
         >Get in Touch</a
@@ -159,7 +163,11 @@
       >
         <a>Team</a>
       </li>
-      <li>
+      <li
+        [routerLink]="['/contact']"
+        [routerLinkActive]="['font-headingFont', '']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <a
           class="bg-primaryWhite py-3 px-4 rounded-full text-primaryBlack font-headingFont"
           >Get in Touch</a

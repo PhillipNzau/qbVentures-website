@@ -1,1 +1,126 @@
-<p>contact works!</p>
+<!-- Hero -->
+<section class="relative h-[500px] bg-primaryGreen overflow-hidden">
+  <app-navbar></app-navbar>
+
+  <h2
+    class="mt-28 text-primaryBlack font-headingExtraBold text-5xl md:text-7xl text-center"
+  >
+    CONTACT US
+  </h2>
+  <h1
+    class="mt-[110px] md:-mt-[185px] text-center font-headingExtraBold text-[#00000008] text-[110px] md:text-[330px]"
+  >
+    CONTACT
+  </h1>
+</section>
+
+<!-- Contact form -->
+<section
+  id="contact"
+  class="relative lg:px-48 my-12 md:my-48 py-10 px-2 md:py-0"
+>
+  <form action="" class="rounded-md bg-primaryWhite p-6 md:p-20 md:-mt-[300px]">
+    <p class="text-center mb-6 text-[#3D4A5C] md:mb-20">
+      We would like to hear from you. Please send us a message by filling out
+      the form below.
+    </p>
+    <!-- first -->
+    <div class="mb-5">
+      <label
+        for="fName"
+        class="mb-3 block text-base font-medium text-[#3D4A5C]"
+      >
+        First Name
+      </label>
+      <input
+        type="text"
+        name="first"
+        id="fName"
+        placeholder=""
+        class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+      />
+    </div>
+
+    <!-- last -->
+    <div class="mb-5">
+      <label
+        for="lName"
+        class="mb-3 block text-base font-medium text-[#3D4A5C]"
+      >
+        Last Name
+      </label>
+      <input
+        type="text"
+        name="last"
+        id="lName"
+        placeholder=""
+        class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+      />
+    </div>
+
+    <!-- email -->
+    <div class="mb-5">
+      <label
+        for="email"
+        class="mb-3 block text-base font-medium text-[#3D4A5C]"
+      >
+        Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder=""
+        class="w-full appearance-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+      />
+    </div>
+    <!-- message -->
+    <div class="mb-5">
+      <label
+        for="message"
+        class="mb-3 block text-base font-medium text-[#3D4A5C]"
+      >
+        Message
+      </label>
+      <textarea
+        rows="4"
+        name="message"
+        id="message"
+        placeholder=""
+        class="w-full appearance-none resize-none rounded-sm border border-transparent bg-[#EFF1F4] py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+      >
+      </textarea>
+
+      <!-- submit -->
+      <div
+        class="group flex items-center justify-around rounded-full py-4 px-8 w-max mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-primaryBlack hover:bg-primaryBlack hover:text-primaryWhite border-primaryBlack border font-headingFont"
+      >
+        Submit
+
+        <svg
+          class="stroke-primaryBlack transition-all duration-300 ease-in-out group-hover:stroke-primaryWhite"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.54376 8.13342H13.6253"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.09198 3.60004L13.6254 8.13341L9.09198 12.6668"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </form>
+</section>
+<!-- footer -->
+<app-footer></app-footer>

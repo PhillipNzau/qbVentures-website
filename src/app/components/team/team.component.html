@@ -1,1 +1,31 @@
-<p>team works!</p>
+<!-- Hero -->
+<section class="relative h-[500px] bg-primaryGreen overflow-hidden">
+  <app-navbar></app-navbar>
+
+  <h2
+    class="mt-28 text-primaryBlack font-headingExtraBold text-7xl text-center"
+  >
+    TEAM
+  </h2>
+  <h1
+    class="mt-[110px] md:-mt-[185px] text-center font-headingExtraBold text-[#00000008] text-[110px] md:text-[330px]"
+  >
+    TEAM
+  </h1>
+</section>
+
+<section
+  id="team"
+  class="my-12 md:my-20 lg:my-48 flex flex-wrap flex-col gap-y-6 md:gap-y-12 md:flex-row items-center justify-center md:px-28 md:py-16 p-6 gap-x-6"
+>
+  <app-team-card
+    *ngFor="let _ of items"
+    image="https://picsum.photos/1"
+    name="John Doe"
+    title="CEO"
+    social="https://github.com/PhillipNzau/qbVentures-website/pull/2"
+  ></app-team-card>
+</section>
+
+<!-- footer -->
+<app-footer></app-footer>
