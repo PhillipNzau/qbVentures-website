@@ -19,31 +19,29 @@
   </ng-container>
 
   <svg
-    class="block md:hidden"
     width="32"
     height="32"
     viewBox="0 0 32 32"
     fill="none"
+    class="block md:hidden stroke-white hover:cursor-pointer"
+    [ngClass]="{ 'stroke-black': isDarkMenu }"
     xmlns="http://www.w3.org/2000/svg"
     (click)="isMenuOpen = !isMenuOpen"
   >
     <path
       d="M5 16H27"
-      stroke="white"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M5 8H27"
-      stroke="white"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M5 24H27"
-      stroke="white"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -87,7 +85,7 @@
     </li>
     <li>
       <a
-        class="bg-lightGreen py-3 px-4 rounded-full text-primaryBlack font-headingFont"
+        class="bg-primaryBlack py-3 px-4 rounded-full text-white font-headingFont"
         >Get in Touch</a
       >
     </li>
@@ -163,7 +161,7 @@
       </li>
       <li>
         <a
-          class="bg-lightGreen py-3 px-4 rounded-full text-primaryBlack font-headingFont"
+          class="bg-primaryWhite py-3 px-4 rounded-full text-primaryBlack font-headingFont"
           >Get in Touch</a
         >
       </li>
