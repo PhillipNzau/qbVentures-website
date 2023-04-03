@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'team', loadComponent:() => import('./components/team/team.component').then(mod => mod.TeamComponent)
   },
+
+  {
+    path: 'coming', loadComponent:() => import('./components/coming-soon/coming-soon.component').then(mod => mod.ComingSoonComponent)
+  },
   
   {
     path: '**', redirectTo: '', pathMatch: 'full'
