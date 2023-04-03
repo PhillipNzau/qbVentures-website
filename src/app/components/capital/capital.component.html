@@ -20,54 +20,59 @@
   class="md:h-[700px] my-12 md:my-20 w-screen gap-y-6 md:gap-y-0 md:py-16 px-0 md:px-20"
 >
   <div class="relative h-full w-full">
-    <div class="md:absolute top-0 h-auto md:w-1/2 md:z-10 bg-green-300">
+    <!-- image -->
+    <div class="md:absolute top-0 flex justify-end h-auto md:w-1/2 md:z-10">
       <img
-        class="h-full w-full"
-        src="https://picsum.photos/365/199"
+        class="md:h-[564px] md:w-[560px]"
+        src="./assets/imgs/capital-1.webp"
         alt="image capital"
       />
     </div>
-    <div
-      class="relative md:absolute md:top-20 md:z-0 md:right-12 md:w-1/2 bg-primaryBlack px-12 md:px-20 py-20 md:py-40"
-    >
-      <p
-        class="font-headingExtraBold text-lightGreen text-3xl md:text-4xl mb-12"
-      >
-        We invest in founders building early-stage software companies.
-      </p>
-      <div
-        class="group flex items-center justify-around rounded-full py-4 px-5 w-max mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-primaryWhite hover:bg-lightGreen hover:text-primaryBlack border-lightGreen border font-headingFont"
-      >
-        Partner With Us
 
-        <svg
-          class="stroke-primaryWhite transition-all duration-300 ease-in-out group-hover:stroke-primaryBlack"
-          width="17"
-          height="17"
-          viewBox="0 0 17 17"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <!-- text -->
+    <div class="md:absolute md:top-20 md:z-0 md:right-12 md:w-1/2">
+      <div
+        class="relative md:w-[90%] bg-primaryBlack px-12 md:px-20 py-20 md:py-40"
+      >
+        <p
+          class="font-headingExtraBold text-lightGreen text-3xl md:text-4xl mb-12"
         >
-          <path
-            d="M2.54376 8.13342H13.6253"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M9.09198 3.60004L13.6254 8.13341L9.09198 12.6668"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+          We invest in founders building early-stage software companies.
+        </p>
+        <div
+          class="group flex items-center justify-around rounded-full py-4 px-5 w-max mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-primaryWhite hover:bg-lightGreen hover:text-primaryBlack border-lightGreen border font-headingFont"
+        >
+          Partner With Us
+
+          <svg
+            class="stroke-primaryWhite transition-all duration-300 ease-in-out group-hover:stroke-primaryBlack"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.54376 8.13342H13.6253"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.09198 3.60004L13.6254 8.13341L9.09198 12.6668"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <!-- mask -->
+        <img
+          class="absolute bottom-0 rotate-180 right-0 md:-right-1 w-[120px] h-[70px] md:w-[150px] md:h-[85px]"
+          src="./assets/imgs/mask.webp"
+          alt="mask img"
+        />
       </div>
-      <!-- mask -->
-      <img
-        class="absolute bottom-0 rotate-180 right-0 md:-right-1 w-[120px] h-[70px] md:w-[150px] md:h-[85px]"
-        src="./assets/imgs/mask.svg"
-        alt="mask img"
-      />
     </div>
   </div>
 </section>
@@ -94,7 +99,7 @@
 <!-- CTA Vision -->
 <section class="w-screen md:h-[500px] md:py-24 md:pl-44 my-0">
   <div
-    class="bg-[url('./assets/imgs/bgMask.svg')] bg-primaryGreen py-14 px-6 md:px-20"
+    class="bg-[url('./assets/imgs/bgMask.webp')] bg-primaryGreen py-14 px-6 md:px-20"
   >
     <h1
       class="uppercase text-primaryBlack text-4xl md:text-6xl font-headingExtraBold"
