@@ -11,6 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavbarComponent {
   @Input() isHome:boolean = false;
+  isMenuOpen:boolean = false;
    
 
 }
