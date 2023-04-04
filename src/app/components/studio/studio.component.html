@@ -1,1 +1,323 @@
-<p>studio works!</p>
+<!-- Hero -->
+<section
+  id="heroSection"
+  class="bg-primaryWhite bg-[url('assets/imgs/studioBg.webp')] bg-no-repeat bg-cover md:pb-40"
+>
+  <app-navbar [isStudio]="!!'true'"></app-navbar>
+
+  <div class="md:px-48 md:py-16 p-6">
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-y-6 md:w-1/2">
+        <h1
+          class="text-5xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
+        >
+          Move from Idea to startup
+        </h1>
+        <p class="text-base">
+          We help entrepreneurs overcome confirmation bias and work towards real
+          value propositions rather than perceived value propositions. Our way
+          of doing this is by being intentional about human-centred design and
+          allowing customers to define the product as much as possible before
+          committing resources to building the product.
+        </p>
+        <!-- Arrows -->
+        <div class="flex gap-x-4">
+          <div
+            class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
+          >
+            <svg
+              class="h-8 w-8 stroke-primaryBlack group-hover:stroke-primaryWhite"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27 16L5 16"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 25L5 16L14 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div
+            class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack rotate-180"
+          >
+            <svg
+              class="h-8 w-8 stroke-primaryBlack group-hover:stroke-primaryWhite"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27 16L5 16"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 25L5 16L14 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="assets/imgs/studio-1.webp" alt="studio image1" />
+      </div>
+    </div>
+
+    <div id="slider">
+      <div class="flex items-center justify-between">
+        <p class="font-headingExtraBold text-5xl">Services</p>
+        <!-- Arrows -->
+        <div class="flex gap-x-4">
+          <div
+            class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-2 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
+          >
+            <svg
+              class="h-8 w-8 stroke-primaryBlack group-hover:stroke-primaryWhite"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27 16L5 16"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 25L5 16L14 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div
+            class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack rotate-180"
+          >
+            <svg
+              class="h-8 w-8 stroke-primaryBlack group-hover:stroke-primaryWhite"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27 16L5 16"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 25L5 16L14 7"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:h-[550px]"
+      >
+        <h2 class="font-headingFont text-3xl mb-6">Testing with customers</h2>
+        <p>
+          Understanding your customers is the key ingredient to success for any
+          startup as it ensures product-market fit. This is why we advocate for
+          the Genchi Genbutsu principle. With this, we facilitate entrepreneurs
+          enrolled in our program in having direct conversations with their
+          potential customers in a bid to help them understand and single out
+          the most important needs. We have up to 44 proven experiments that
+          entrepreneurs can use singly or in combinations to test our concepts,
+          features or entire products.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="value" class="mx-4 bg-primaryWhite rounded-3xl px-4 md:-mt-40">
+  <p class="font-headingExtraBold text-5xl md:px-48 md:py-16 p-6">Services</p>
+  <img
+    class="w-full object-cover"
+    src="./assets/imgs/studio-2.webp"
+    alt="studio image2"
+  />
+  <div class="flex justify-between items-start md:px-48 md:py-16 p-6">
+    <p class="font-headingExtraBold text-5xl md:w-1/2">
+      Why entrepreneurs like to work with us
+    </p>
+
+    <ul class="list-decimal">
+      <li>Access to customer</li>
+      <li>Access to experts</li>
+      <li>World class approaches</li>
+      <li>Access to local investors</li>
+      <li>Access to local and international markets</li>
+      <li>Shared resources</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Events -->
+<section id="events" class="md:px-48 md:py-16 p-6">
+  <p class="font-headingExtraBold text-5xl mb-8">EVENTS</p>
+
+  <div class="flex items-center justify-between">
+    <!-- ---1 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+    >
+      <p class="font-headingExtraBold text-3xl">
+        Defining baseline metrics for growth assessment
+      </p>
+      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+    </div>
+
+    <!-- ---2 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+    >
+      <p class="font-headingExtraBold text-3xl">
+        Tips for building a successful MVP
+      </p>
+      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+    </div>
+    <!-- ---3 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+    >
+      <p class="font-headingExtraBold text-3xl">Assessing funding options</p>
+      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="h-auto bg-primaryBlack text-white mx-6 rounded-t-3xl">
+  <div
+    class="flex md:items-start md:justify-around flex-col md:flex-row px-6 md:20 xl:px-48 py-10 md:py-20 space-y-6 md:space-y-0"
+  >
+    <div class="space-y-6">
+      <img
+        src="./assets/imgs/box3LogoWhite.svg"
+        width="229"
+        height="39"
+        alt="qbventures logo"
+      />
+      <p class="md:w-96">
+        Qbventures is a platform and a venture catalyst on a mission to promote
+        innovation, invest in technology ideas (govtech, fintech and emerging
+        markets) and also explore alternative business models.
+      </p>
+    </div>
+    <div>
+      <ul class="pace-y-2 md:space-y-4">
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >About</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Studio</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Capital</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Team</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="pace-y-2 md:space-y-4">
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Twitter</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Facebook</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="pace-y-2 md:space-y-6">
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >Nairobi,Kenya</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >+254 700 123 123</a
+          >
+        </li>
+        <li class="group">
+          <a
+            class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryGreen after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
+            >hello@qbventures.com</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-primaryGreen text-center py-8">
+    © Copyright Qbventures. All Rights Reserved
+  </div>
+</footer>
