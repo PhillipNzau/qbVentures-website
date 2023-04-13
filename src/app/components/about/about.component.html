@@ -96,9 +96,28 @@
   </div>
 </section>
 
+<!-- Team section -->
+
+<section class="my-8 md:my-16 md:px-28">
+  <h1 class="uppercase text-center font-headingExtraBold text-3xl md:text-4xl">
+    OUR TEAM
+  </h1>
+  <div
+    class="flex flex-wrap flex-col gap-y-6 md:gap-y-12 md:flex-row items-center justify-center p-6 gap-x-6"
+  >
+    <app-team-card
+      *ngFor="let member of team"
+      [image]="member.image"
+      [name]="member.name"
+      [title]="member.title"
+      [social]="member.social"
+    ></app-team-card>
+  </div>
+</section>
+
 <!-- investors -->
 <section
-  class="flex md:items-start gap-x-10 justify-center bg-primaryBlack lg:px-48 lg:h-[800px] my-12 md:my-48 flex-col md:flex-row py-10 px-6 md:py-0"
+  class="flex md:items-start gap-x-20 justify-center lg:px-48 my-12 md:my-48 flex-col md:flex-row py-10 px-6 md:py-0"
 >
   <div class="relative md:h-[700px] md:w-[556px]">
     <img
@@ -108,82 +127,52 @@
     />
     <!-- mask -->
     <img
-      class="absolute -bottom-3 rotate-180 2xl:-bottom-0 -right-1 w-[120px] h-[70px]"
+      class="absolute bottom-0 md:-bottom-3 rotate-180 2xl:-bottom-0 -right-1 w-[120px] h-[70px]"
       src="./assets/imgs/maskDark.webp"
       alt="mask img"
     />
   </div>
-  <div class="md:w-[520px] pt-10 md:pt-20">
-    <h1 class="text-lightGreen font-headingExtraBold text-3xl md:text-4xl mb-4">
-      Lorem ipsum dolor sit amet consectetur. Vel.
+  <div class="md:w-[520px] pt-10 md:pt-0 pb-10">
+    <h1 class="font-headingExtraBold text-3xl md:text-4xl mb-4">
+      Our values guide our culture and approach to venture building
     </h1>
-    <p class="text-primaryWhite">
-      Lorem ipsum dolor sit amet consectetur. Pulvinar est suspendisse orci non
-      odio egestas fames volutpat etiam. Praesent nunc nisl interdum eu
-      accumsan. Sed eget enim egestas pellentesque. Proin egestas arcu imperdiet
-      ultrices. At quam quis netus fames varius a platea. Quam purus montes
-      elementum cursus. Tristique diam nibh aliquet nisl vulputate sagittis.
-      Nisi et turpis non nibh volutpat tellus nec. Nisi purus faucibus proin
-      blandit purus accumsan aliquam. Purus eget faucibus tellus orci. Fusce
-      porttitor sodales ut nisl in nunc. Sed semper eget blandit nascetur vel ut
-      sed sit. Lacinia sollicitudin pretium sed adipiscing gravida nulla mi
-      fermentum cursus. Etiam sagittis neque semper sit tristique sollicitudin
-      viverra congue. Malesuada orci consectetur in tincidunt a convallis mus.
-      Amet turpis volutpat sit.
-    </p>
-  </div>
-</section>
-
-<!-- Latest news -->
-<section class="px-6 md:px-20 my-12 lg:my-32">
-  <div class="my-6 flex items-center justify-between">
-    <h1 class="font-headingExtraBold text-2xl md:text-[40px]">LATEST NEWS</h1>
-    <div
-      class="group flex items-center justify-around border-2 rounded-full border-primaryBlack text-[9px] md:text-base p-2 md:py-4 md:px-5 md:w-44 cursor-pointer transition-all duration-500 transform hover:bg-primaryBlack hover:text-primaryWhite"
-    >
-      Read More
-      <svg
-        class="stroke-primaryBlack group-hover:stroke-primaryWhite h-4 w-4 md:h-6 md:w-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3.75 12H20.25"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M13.5 5.25L20.25 12L13.5 18.75"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
-  </div>
-  <div
-    class="flex items-center justify-between gap-x-6 flex-col lg:flex-row gap-y-6 lg:gap-y-0"
-  >
-    <app-news-card
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
-    ></app-news-card>
-
-    <app-news-card
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
-    ></app-news-card>
-
-    <app-news-card
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
-    ></app-news-card>
-    <app-news-card
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      description="Lorem ipsum dolor sit amet consectetur. Sit suspendisse eu id sagittis fringilla non in at facilisis. Nibh sed nibh et consectetur."
-    ></app-news-card>
+    <ul class="list-disc">
+      <li>
+        It is okay to fail <br />
+        We embrace calculated risk-taking and consider the learning
+        opportunities in failure as integral to our growth and innovation.
+      </li>
+      <li>
+        Chutzpah - Dare to Do <br />
+        We adopt boldness, audacity, and confidence in pursuing ambitious goals
+        and taking on challenges.
+      </li>
+      <li>
+        Innovative. <br />
+        We are open to new ideas and constantly looking for ways to improve and
+        evolve. We strive to think outside the box and take risks in order to
+        bring new and unique products and services to the market.
+      </li>
+      <li>
+        Passionate <br />
+        We are made up of individuals who are deeply committed to their work and
+        are excited about the potential impact we can have.
+      </li>
+      <li>
+        Leadership <br />
+        We foster an environment where individuals are encouraged to take charge
+        and make decisions that will drive the company forward. We also actively
+        work on developing the leadership skills of our team members
+      </li>
+      <li>
+        Accountable <br />
+        We hold ourselves accountable to our key stakeholders for delivering on
+        our promise. We also hold our members accountable for their work and
+        have clear expectations for their performance and results. We constantly
+        work to create a culture of transparency and trust that ensures that we
+        are always moving in the right direction.
+      </li>
+    </ul>
   </div>
 </section>
 
