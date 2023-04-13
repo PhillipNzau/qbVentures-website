@@ -19,11 +19,11 @@
   class="my-12 md:my-20 lg:my-48 flex flex-wrap flex-col gap-y-6 md:gap-y-12 md:flex-row items-center justify-center md:px-28 md:py-16 p-6 gap-x-6"
 >
   <app-team-card
-    *ngFor="let _ of items"
-    image="https://picsum.photos/1"
-    name="John Doe"
-    title="CEO"
-    social="https://github.com/PhillipNzau/qbVentures-website/pull/2"
+    *ngFor="let member of team"
+    [image]="member.image"
+    [name]="member.name"
+    [title]="member.title"
+    [social]="member.social"
   ></app-team-card>
 </section>
 

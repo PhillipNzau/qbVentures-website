@@ -12,6 +12,25 @@ import { TeamCardComponent } from "../../shared/team-card/team-card.component";
     imports: [CommonModule, NavbarComponent, FooterComponent, TeamCardComponent]
 })
 export class TeamComponent {
-  items:number[]=[1,2,1,2,1,2,12,1,2,1,2,1,21]
+  team = [
+    {
+        name: 'Aaron Nzau',
+        title: 'Founder and CEO',
+        image:'./assets/imgs/aaron.webp',
+        social: 'linkedin'
+    },
+    {
+        name: 'Richard Otolo',
+        image:'./assets/imgs/richard.webp',
+        title: 'CTO',
+        social: 'linkedin'
+    },
+    {
+        name: 'Purity Kimani',
+        title: 'CFO',
+        image:'./assets/imgs/aaron.webps',
+        social: 'linkedin'
+    }
+]
 
 }

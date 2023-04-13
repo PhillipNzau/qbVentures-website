@@ -29,7 +29,7 @@ export class AboutComponent {
         {
             name: 'Purity Kimani',
             title: 'CFO',
-            image:'./assets/imgs/aaron.webp',
+            image:'./assets/imgs/aaron.webps',
             social: 'linkedin'
         }
     ]
