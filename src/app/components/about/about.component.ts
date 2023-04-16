@@ -24,13 +24,13 @@ export class AboutComponent {
             name: 'Richard Otolo',
             image:'./assets/imgs/richard.webp',
             title: 'CTO',
-            social: 'linkedin'
+            social: 'https://www.linkedin.com/in/richard-assanga-otolo/'
         },
         {
             name: 'Purity Kimani',
             title: 'CFO',
-            image:'./assets/imgs/aaron.webps',
-            social: 'linkedin'
+            image:'./assets/imgs/purity.webp',
+            social: 'https://www.linkedin.com/in/purity-k-111166a4'
         }
     ]
 
