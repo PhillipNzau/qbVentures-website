@@ -9,6 +9,7 @@ module.exports = {
         primaryBlack: 'hsl(0 0% 0%)',
         primaryWhite:'hsl(0 0% 100%)',
         myBg:'hsl(42 36% 95%)',
+        primaryOrange: 'hsl(14, 96%, 67%)'
       },
       fontFamily: {
         'textFont': ['zonaRegular', 'sans-serif'],

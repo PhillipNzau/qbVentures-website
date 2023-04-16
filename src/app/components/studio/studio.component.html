@@ -5,11 +5,11 @@
 >
   <app-navbar [isStudio]="!!'true'"></app-navbar>
 
-  <div class="md:px-48 md:py-16 p-6">
+  <div class="-mt-16 md:mt-0 md:px-48 md:py-16 p-6">
     <div class="flex justify-between">
       <div class="flex flex-col gap-y-6 md:w-1/2">
         <h1
-          class="text-5xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
+          class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
         >
           Move from Idea to startup
         </h1>
@@ -74,16 +74,16 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="hidden md:block">
         <img src="assets/imgs/studio-1.webp" alt="studio image1" />
       </div>
     </div>
 
-    <div id="slider">
+    <div id="slider" class="mt-10">
       <div class="flex items-center justify-between">
-        <p class="font-headingExtraBold text-5xl">Services</p>
+        <p class="font-headingExtraBold text-3xl md:text-5xl">Services</p>
         <!-- Arrows -->
-        <div class="flex gap-x-4">
+        <div class="hidden gap-x-4 md:flex">
           <div
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-2 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
           >
@@ -138,77 +138,189 @@
       </div>
 
       <div
-        class="bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:h-[550px]"
+        class="mt-8 flex flex-col gap-x-0 gap-y-4 md:flex-row md:gap-y-0 md:gap-x-8"
       >
-        <h2 class="font-headingFont text-3xl mb-6">Testing with customers</h2>
-        <p>
-          Understanding your customers is the key ingredient to success for any
-          startup as it ensures product-market fit. This is why we advocate for
-          the Genchi Genbutsu principle. With this, we facilitate entrepreneurs
-          enrolled in our program in having direct conversations with their
-          potential customers in a bid to help them understand and single out
-          the most important needs. We have up to 44 proven experiments that
-          entrepreneurs can use singly or in combinations to test our concepts,
-          features or entire products.
-        </p>
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
+        >
+          <h2 class="font-headingFont text-3xl mb-6">Testing with customers</h2>
+          <p>
+            Understanding your customers is the key ingredient to success for
+            any startup as it ensures product-market fit. This is why we
+            advocate for the Genchi Genbutsu principle. With this, we facilitate
+            entrepreneurs enrolled in our program in having direct conversations
+            with their potential customers in a bid to help them understand and
+            single out the most important needs. We have up to 44 proven
+            experiments that entrepreneurs can use singly or in combinations to
+            test our concepts, features or entire products.
+          </p>
+        </div>
+
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
+        >
+          <h2 class="font-headingFont text-3xl mb-6">
+            Building the right team
+          </h2>
+          <p>
+            A common trait of all successful startups is their strength in the
+            composition of their founding team. This is the sole reason why we
+            do a thorough evaluation of startup teams’ capabilities and
+            experiences. We however understand that getting the right team is
+            not always easy and that is why we have a pool of talent that
+            startups can draw from when need arises.
+          </p>
+        </div>
+
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
+        >
+          <h2 class="font-headingFont text-3xl mb-6">Recruiting advisors</h2>
+          <p>
+            Success stories always feature advisors and mentors whose roles are
+            to give guidance away from common pitfalls. This is especially
+            important in entrepreneurship as waiting to learn from one's own
+            experiences can lead to
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<section id="value" class="mx-4 bg-primaryWhite rounded-3xl px-4 md:-mt-40">
-  <p class="font-headingExtraBold text-5xl md:px-48 md:py-16 p-6">Services</p>
-  <img
-    class="w-full object-cover"
-    src="./assets/imgs/studio-2.webp"
-    alt="studio image2"
-  />
-  <div class="flex justify-between items-start md:px-48 md:py-16 p-6">
-    <p class="font-headingExtraBold text-5xl md:w-1/2">
-      Why entrepreneurs like to work with us
-    </p>
+  <!-- Services -->
+  <section id="value" class="px-4 mb-6 md:px-48">
+    <img
+      class="w-full object-cover"
+      src="./assets/imgs/studio-2.webp"
+      alt="studio image2"
+    />
+    <div class="text-center md:w-3/4 mx-auto py-10 md:py-20">
+      <p class="font-headingExtraBold text-3xl mb-6 md:text-5xl">
+        Why entrepreneurs like to work with us
+      </p>
+      <p>
+        As much as there is no one-size-fits-all approach to venture building,
+        our venture playbook is proven to help bring about scalable and
+        sustainable business models for our portfolio ventures.
+      </p>
+    </div>
 
-    <ul class="list-decimal">
-      <li>Access to customer</li>
-      <li>Access to experts</li>
-      <li>World class approaches</li>
-      <li>Access to local investors</li>
-      <li>Access to local and international markets</li>
-      <li>Shared resources</li>
-    </ul>
-  </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-y-16">
+      <div class="flex gap-x-4">
+        <p
+          class="font-headingExtraBold text-primaryOrange text-3xl md:text-6xl"
+        >
+          1
+        </p>
+        <div class="space-y-2">
+          <p class="font-headingFont text-2xl font-bold">Concept validation</p>
+          <p>
+            This marks the first phase of our venture-building process in which
+            we work with founders to validate opportunities and build business
+            models while ensuring alignment with the overall founder’s vision.
+            We also help to raise the capital required for the next phases.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-x-4">
+        <p
+          class="font-headingExtraBold text-primaryOrange text-3xl md:text-6xl"
+        >
+          2
+        </p>
+        <div class="space-y-2">
+          <p class="font-headingFont text-2xl font-bold">
+            Product-market fitting
+          </p>
+          <p>
+            In this phase, we use HCD principles to come up with appropriate
+            branding alongside testable prototypes that help define product
+            feature sets. We also use Design Thinking skills to better the value
+            propositions and improve the user experience for the target
+            customers
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-x-4">
+        <p
+          class="font-headingExtraBold text-primaryOrange text-3xl md:text-6xl"
+        >
+          3
+        </p>
+        <div class="space-y-2">
+          <p class="font-headingFont text-2xl font-bold">Technology build</p>
+          <p>
+            In this phase, we help entrepreneurs build the capacity required to
+            achieve the technical requirements for the product. We do not teach
+            coding skills but we can link up the venture with a tech-build
+            partner.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-x-4">
+        <p
+          class="font-headingExtraBold text-primaryOrange text-3xl md:text-6xl"
+        >
+          4
+        </p>
+        <div class="space-y-2">
+          <p class="font-headingFont text-2xl font-bold">
+            Acceleration and commercialisation
+          </p>
+          <p>
+            We extend our involvement in a portfolio venture during the
+            acceleration and commercialization phase to ensure there is
+            sustainable organizational scaling. We also offer operational
+            support through our studio’s access to skilled personnel who may be
+            used as shared resources
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
 <!-- Events -->
 <section id="events" class="md:px-48 md:py-16 p-6">
-  <p class="font-headingExtraBold text-5xl mb-8">EVENTS</p>
+  <p class="font-headingExtraBold text-3xl md:text-5xl mb-8">EVENTS</p>
 
-  <div class="flex items-center justify-between">
+  <div
+    class="flex items-center justify-between gap-4 flex-col mg:gap-y-0 md:flex-row"
+  >
     <!-- ---1 -->
     <div
-      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#FFC800] hover:cursor-pointer"
     >
-      <p class="font-headingExtraBold text-3xl">
-        Defining baseline metrics for growth assessment
-      </p>
-      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+      <p class="font-headingExtraBold text-3xl">Box3Labs Demo Day</p>
+      <div class="flex justify-between">
+        <p>May 4th 2023</p>
+        <p>Virtual and on-premise</p>
+      </div>
     </div>
 
     <!-- ---2 -->
     <div
-      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#FFC800] hover:cursor-pointer"
     >
       <p class="font-headingExtraBold text-3xl">
-        Tips for building a successful MVP
+        Webinar: Essential techniques for validating your startup ideas
       </p>
-      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+      <div class="flex justify-between">
+        <p>May 23rd 2023</p>
+        <p>Virtual</p>
+      </div>
     </div>
     <!-- ---3 -->
     <div
-      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8"
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#FFC800] hover:cursor-pointer"
     >
-      <p class="font-headingExtraBold text-3xl">Assessing funding options</p>
-      <p class=" ">07/7/2022 3:00 Mr Saint</p>
+      <p class="font-headingExtraBold text-3xl">
+        Webinar: How to tell if you have product-market fit
+      </p>
+      <div class="flex justify-between">
+        <p>June 20th 2023</p>
+        <p>Virtual</p>
+      </div>
     </div>
   </div>
 </section>
