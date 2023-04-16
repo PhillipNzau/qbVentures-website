@@ -9,6 +9,7 @@ module.exports = {
         primaryBlack: 'hsl(0 0% 0%)',
         primaryWhite:'hsl(0 0% 100%)',
         myBg:'hsl(42 36% 95%)',
+        primaryOrange: 'hsl(14, 96%, 67%)'
       },
       fontFamily: {
         'textFont': ['zonaRegular', 'sans-serif'],
@@ -18,7 +19,19 @@ module.exports = {
       },
       backgroundImage:{
         'home-pattern': "url('/src/assets/imgs/homeBg.png')"
-      }
+      },
+     // that is animation class
+     animation: {
+      fade: 'fadeOut 0.3s ease-in-out',
+    },
+
+    // that is actual animation
+    keyframes: theme => ({
+      fadeOut: {
+        '0%': { color: theme('colors.transparent') },
+        '100%': { color: theme('colors.white') },
+      },
+    }),
     },
   },
   plugins: [],
