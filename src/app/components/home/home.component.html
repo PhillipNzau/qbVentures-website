@@ -31,6 +31,7 @@
     </p>
     <div
       class="group flex items-center justify-between border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
+      [routerLink]="['/studio']"
     >
       Learn More
       <svg
@@ -72,6 +73,7 @@
     </p>
     <div
       class="group flex items-center justify-between border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
+      [routerLink]="['/capital']"
     >
       Learn More
       <svg
@@ -126,7 +128,9 @@
         solutions are available as both web and mobile applications designed for
         parking operators and motorists respectively.
       </p>
-      <div
+      <a
+        href="https://naiparq.co.ke/"
+        target="_blank"
         class="group flex items-center justify-between border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
       >
         Visit Naiparq
@@ -151,14 +155,10 @@
             stroke-linejoin="round"
           />
         </svg>
-      </div>
+      </a>
     </div>
     <div class="w-full px-6 md:px-0 md:w-1/2">
-      <iframe
-        class="w-full h-[345px]"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY"
-      >
-      </iframe>
+      <img src="./assets/imgs/naiparq-app.webp" alt="" />
     </div>
   </div>
 
@@ -167,11 +167,7 @@
     class="flex flex-col-reverse md:flex-row space-y-6 md:space-y-0 items-center justify-between md:px-20 lg:px-48 md:space-x-6 mt-12 lg:mt-24"
   >
     <div class="w-full px-6 pt-6 md:px-0 md:w-1/2 md:pt-0">
-      <iframe
-        class="w-full h-[345px]"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY"
-      >
-      </iframe>
+      <img src="./assets/imgs/prodtrace-app.webp" alt="" />
     </div>
     <div class="px-6 md:px-0 md:w-1/2">
       <img src="./assets/imgs/prodtrace.webp" alt="prodtrace logo" />
@@ -182,7 +178,9 @@
         different farming techniques and a place where they can find verified
         seed and manure distributors.
       </p>
-      <div
+      <a
+        href="https://prodtrace.io/"
+        target="_blank"
         class="group flex items-center justify-between border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-52 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
       >
         Visit Prodtrace
@@ -207,7 +205,7 @@
             stroke-linejoin="round"
           />
         </svg>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -228,7 +226,9 @@
         personnel behavior and perform automated reporting based on user
         preference.
       </p>
-      <div
+      <a
+        href="https://loita.io/"
+        target="_blank"
         class="group flex items-center justify-between border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-44 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
       >
         Visit Loita
@@ -253,14 +253,10 @@
             stroke-linejoin="round"
           />
         </svg>
-      </div>
+      </a>
     </div>
     <div class="w-full px-6 md:px-0 md:w-1/2">
-      <iframe
-        class="w-full h-[345px]"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY"
-      >
-      </iframe>
+      <img src="./assets/imgs/loita-app.webp" alt="" />
     </div>
   </div>
 </section>
@@ -276,6 +272,7 @@
   </p>
   <div
     class="group flex items-center justify-around rounded-full py-4 px-5 w-44 mt-5 gap-x-4 cursor-pointer transition-all duration-500 transform bg-transparent text-primaryWhite hover:bg-lightGreen hover:text-primaryBlack border-lightGreen border font-headingFont"
+    [routerLink]="['./contact']"
   >
     Contact
 
@@ -362,6 +359,50 @@
     ></app-news-card>
   </div>
 </section> -->
+<!-- Events -->
+<section id="events" class="md:px-48 md:py-16 p-6">
+  <p class="font-headingExtraBold text-3xl md:text-5xl mb-8">EVENTS</p>
+
+  <div
+    class="flex items-center justify-between gap-4 flex-col mg:gap-y-0 md:flex-row"
+  >
+    <!-- ---1 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#02D493] hover:cursor-pointer"
+    >
+      <p class="font-headingExtraBold text-3xl">Box3Labs Demo Day</p>
+      <div class="flex justify-between">
+        <p>May 4th 2023</p>
+        <p>Virtual and on-premise</p>
+      </div>
+    </div>
+
+    <!-- ---2 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#02D493] hover:cursor-pointer"
+    >
+      <p class="font-headingExtraBold text-3xl">
+        Webinar: Essential techniques for validating your startup ideas
+      </p>
+      <div class="flex justify-between">
+        <p>May 23rd 2023</p>
+        <p>Virtual</p>
+      </div>
+    </div>
+    <!-- ---3 -->
+    <div
+      class="border border-primaryBlack rounded-3xl h-96 md:w-80 flex flex-col justify-between py-8 px-8 hover:border-none hover:bg-gradient-to-br hover:from-[#02D493] hover:cursor-pointer"
+    >
+      <p class="font-headingExtraBold text-3xl">
+        Webinar: How to tell if you have product-market fit
+      </p>
+      <div class="flex justify-between">
+        <p>June 20th 2023</p>
+        <p>Virtual</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
 <app-footer></app-footer>
