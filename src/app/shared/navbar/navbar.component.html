@@ -26,35 +26,68 @@
     />
   </ng-container>
 
-  <svg
-    width="32"
-    height="32"
-    viewBox="0 0 32 32"
-    fill="none"
-    class="block md:hidden stroke-white hover:cursor-pointer"
-    [ngClass]="{ 'stroke-black': isDarkMenu }"
-    xmlns="http://www.w3.org/2000/svg"
-    (click)="isMenuOpen = !isMenuOpen"
-  >
-    <path
-      d="M5 16H27"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M5 8H27"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M5 24H27"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
+  <ng-container *ngIf="!isStudio">
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      class="block md:hidden stroke-white hover:cursor-pointer"
+      [ngClass]="{ 'stroke-black': isDarkMenu }"
+      xmlns="http://www.w3.org/2000/svg"
+      (click)="isMenuOpen = !isMenuOpen"
+    >
+      <path
+        d="M5 16H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 8H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 24H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </ng-container>
+
+  <ng-container *ngIf="isStudio">
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      class="block md:hidden stroke-black hover:cursor-pointer"
+      xmlns="http://www.w3.org/2000/svg"
+      (click)="isMenuOpen = !isMenuOpen"
+    >
+      <path
+        d="M5 16H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 8H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 24H27"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </ng-container>
 
   <ul
     class="hidden md:flex items-center justify-center flex-wrap md:flex-nowrap gap-x-6 gap-y-6"

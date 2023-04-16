@@ -1,6 +1,6 @@
 <!-- Hero -->
 <section class="relative h-[500px] bg-primaryGreen overflow-hidden">
-  <app-navbar></app-navbar>
+  <app-navbar [isDarkMenu]="!!'true'"></app-navbar>
 
   <h2
     class="mt-28 text-primaryBlack font-headingExtraBold text-7xl text-center"
@@ -110,7 +110,9 @@
     </p>
   </div>
   <!-- qbtheme -->
-  <div class="grid divide-y divide-neutral-200 text-primaryWhite md:w-1/2">
+  <div
+    class="grid divide-y divide-neutral-200 text-primaryWhite w-full md:w-1/2"
+  >
     <div class="pb-5">
       <details class="group">
         <summary
