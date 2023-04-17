@@ -17,6 +17,8 @@ import { SwiperComponent } from "swiper/angular";
 export class StudioComponent {
     @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
     @ViewChild('servSwiper', { static: false }) servSwiper?: SwiperComponent;
+    isMenuOpen:boolean = false;
+   
 
     quotes = [
         {

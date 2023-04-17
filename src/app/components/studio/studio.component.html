@@ -3,30 +3,196 @@
   id="heroSection"
   class="bg-primaryWhite bg-[url('assets/imgs/studioBg.webp')] bg-no-repeat bg-cover md:pb-40"
 >
-  <app-navbar [isStudio]="!!'true'"></app-navbar>
+  <!-- navbar -->
+  <div>
+    <div
+      class="z-0 xl:px-48 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
+    >
+      <ng-container>
+        <img
+          src="./assets/imgs/box3Logo.svg"
+          class="w-40 h-10 md:w-56 hover:cursor-pointer"
+          alt="qbventures logo"
+          [routerLink]="['/']"
+        />
+      </ng-container>
+
+      <ng-container>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          class="block md:hidden stroke-black hover:cursor-pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          (click)="isMenuOpen = !isMenuOpen"
+        >
+          <path
+            d="M5 16H27"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5 8H27"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5 24H27"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </ng-container>
+
+      <ul
+        class="hidden md:flex items-center justify-center flex-wrap md:flex-nowrap gap-x-6 gap-y-6"
+      >
+        <li
+          class="text-center px-4 py-2 relative before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 after:border-black before:border-black before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+          [routerLink]="['/about']"
+          [routerLinkActive]="['font-headingFont', '']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a>About</a>
+        </li>
+        <li
+          class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+          [routerLink]="['/studio']"
+          [routerLinkActive]="['font-headingFont', '']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a>Studio</a>
+        </li>
+        <li
+          class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+          [routerLink]="['/capital']"
+          [routerLinkActive]="['font-headingFont', '']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a>Capital</a>
+        </li>
+        <li
+          class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+          [routerLink]="['/team']"
+          [routerLinkActive]="['font-headingFont', '']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a>Team</a>
+        </li>
+        <li
+          [routerLink]="['/contact']"
+          [routerLinkActive]="['font-headingFont', '']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="py-3 px-4 rounded-full font-headingFont">Get in Touch</a>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      [ngClass]="{ 'z-0 opacity-100 top-[0]': isMenuOpen }"
+      class="absolute -top-[1200px] opacity-0 w-screen min-h-full transition-all duration-500 ease-in bg-black text-white"
+    >
+      <div class="flex justify-end p-6">
+        <svg
+          class="hover:cursor-pointer"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          (click)="isMenuOpen = !isMenuOpen"
+        >
+          <path
+            d="M25 7L7 25"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M25 25L7 7"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <div class="mt-5">
+        <ul
+          class="flex md:hidden items-center justify-center flex-col gap-y-8 font-headingFont"
+        >
+          <li
+            class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+            [routerLink]="['/about']"
+            [routerLinkActive]="['font-headingFont', '']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a>About</a>
+          </li>
+          <li
+            class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+            [routerLink]="['/studio']"
+            [routerLinkActive]="['font-headingFont', '']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a>Studio</a>
+          </li>
+          <li
+            class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+            [routerLink]="['/capital']"
+            [routerLinkActive]="['font-headingFont', '']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a>Capital</a>
+          </li>
+          <li
+            class="text-center px-4 py-2 relative after:border-black before:border-black before:absolute before:-bottom-2 before:-right-2 before:h-0 before:w-0 before:border-b before:border-r before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-0 after:w-0 after:border-t after:border-l after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] hover:cursor-pointer"
+            [routerLink]="['/team']"
+            [routerLinkActive]="['font-headingFont', '']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a>Team</a>
+          </li>
+          <li
+            [routerLink]="['/contact']"
+            [routerLinkActive]="['font-headingFont', '']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a
+              class="bg-primaryWhite py-3 px-4 rounded-full text-primaryBlack font-headingFont"
+              >Get in Touch</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="-mt-16 md:mt-0 md:px-48 md:py-16 p-6">
-    <div class="flex justify-between gap-x-52 px-6">
-      <div class="w-full md:w-1/2">
-        <!-- the slider -->
-        <swiper #swiper [slidesPerView]="1" [spaceBetween]="50">
-          <ng-template swiperSlide *ngFor="let quote of quotes">
-            <div class="flex flex-col gap-y-6 md:w-[700px]">
-              <h1
-                class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
-              >
-                {{ quote.title }}
-              </h1>
-              <p class="text-base">
-                {{ quote.description }}
-              </p>
-            </div>
-          </ng-template>
-        </swiper>
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-y-6 md:w-1/2">
+        <h1
+          class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
+        >
+          Move from Idea to startup
+        </h1>
+        <p class="text-base">
+          We help entrepreneurs overcome confirmation bias and work towards real
+          value propositions rather than perceived value propositions. Our way
+          of doing this is by being intentional about human-centred design and
+          allowing customers to define the product as much as possible before
+          committing resources to building the product.
+        </p>
         <!-- Arrows -->
         <div class="flex gap-x-4">
           <div
-            (click)="slidePrev()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
           >
             <svg
@@ -52,7 +218,6 @@
             </svg>
           </div>
           <div
-            (click)="slideNext()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack rotate-180"
           >
             <svg
@@ -79,7 +244,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block w-3/4">
+      <div class="hidden md:block">
         <img src="assets/imgs/studio-1.webp" alt="studio image1" />
       </div>
     </div>
@@ -90,7 +255,6 @@
         <!-- Arrows -->
         <div class="hidden gap-x-4 md:flex">
           <div
-            (click)="servSlidePrev()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-2 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
           >
             <svg
@@ -116,7 +280,6 @@
             </svg>
           </div>
           <div
-            (click)="servSlideNext()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack rotate-180"
           >
             <svg
@@ -147,46 +310,49 @@
       <div
         class="mt-8 flex flex-col gap-x-0 gap-y-4 md:flex-row md:gap-y-0 md:gap-x-8"
       >
-        <swiper
-          #servSwiper
-          [slidesPerView]="3"
-          [spaceBetween]="10"
-          class="hidden md:block"
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
         >
-          <ng-template swiperSlide *ngFor="let service of services">
-            <div
-              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] min-h-full md:min-h-[550px]"
-            >
-              <h2 class="font-headingFont text-3xl mb-6">
-                {{ service.title }}
-              </h2>
-              <p class="text-base">
-                {{ service.description }}
-              </p>
-            </div>
-          </ng-template>
-        </swiper>
+          <h2 class="font-headingFont text-3xl mb-6">Testing with customers</h2>
+          <p>
+            Understanding your customers is the key ingredient to success for
+            any startup as it ensures product-market fit. This is why we
+            advocate for the Genchi Genbutsu principle. With this, we facilitate
+            entrepreneurs enrolled in our program in having direct conversations
+            with their potential customers in a bid to help them understand and
+            single out the most important needs. We have up to 44 proven
+            experiments that entrepreneurs can use singly or in combinations to
+            test our concepts, features or entire products.
+          </p>
+        </div>
 
-        <!-- mobile view service slider -->
-        <swiper
-          #servSwiper
-          [slidesPerView]="1"
-          [spaceBetween]="10"
-          class="block md:hidden w-full"
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
         >
-          <ng-template swiperSlide *ngFor="let service of services">
-            <div
-              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] min-h-[550px]"
-            >
-              <h2 class="font-headingFont text-3xl mb-6">
-                {{ service.title }}
-              </h2>
-              <p class="text-base">
-                {{ service.description }}
-              </p>
-            </div>
-          </ng-template>
-        </swiper>
+          <h2 class="font-headingFont text-3xl mb-6">
+            Building the right team
+          </h2>
+          <p>
+            A common trait of all successful startups is their strength in the
+            composition of their founding team. This is the sole reason why we
+            do a thorough evaluation of startup teams’ capabilities and
+            experiences. We however understand that getting the right team is
+            not always easy and that is why we have a pool of talent that
+            startups can draw from when need arises.
+          </p>
+        </div>
+
+        <div
+          class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
+        >
+          <h2 class="font-headingFont text-3xl mb-6">Recruiting advisors</h2>
+          <p>
+            Success stories always feature advisors and mentors whose roles are
+            to give guidance away from common pitfalls. This is especially
+            important in entrepreneurship as waiting to learn from one's own
+            experiences can lead to
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -426,7 +592,7 @@
         <li class="group">
           <a
             class="relative pr-4 pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primaryOrange after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100 group-hover:cursor-pointer"
-            >info@qbventures.africa</a
+            >hello@qbventures.com</a
           >
         </li>
       </ul>
