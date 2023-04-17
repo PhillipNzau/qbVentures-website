@@ -6,23 +6,27 @@
   <app-navbar [isStudio]="!!'true'"></app-navbar>
 
   <div class="-mt-16 md:mt-0 md:px-48 md:py-16 p-6">
-    <div class="flex justify-between">
-      <div class="flex flex-col gap-y-6 md:w-1/2">
-        <h1
-          class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
-        >
-          Move from Idea to startup
-        </h1>
-        <p class="text-base">
-          We help entrepreneurs overcome confirmation bias and work towards real
-          value propositions rather than perceived value propositions. Our way
-          of doing this is by being intentional about human-centred design and
-          allowing customers to define the product as much as possible before
-          committing resources to building the product.
-        </p>
+    <div class="flex justify-between gap-x-52 px-6">
+      <div class="w-full md:w-1/2">
+        <!-- the slider -->
+        <swiper #swiper [slidesPerView]="1" [spaceBetween]="50">
+          <ng-template swiperSlide *ngFor="let quote of quotes">
+            <div class="flex flex-col gap-y-6 md:w-[700px]">
+              <h1
+                class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
+              >
+                {{ quote.title }}
+              </h1>
+              <p class="text-base">
+                {{ quote.description }}
+              </p>
+            </div>
+          </ng-template>
+        </swiper>
         <!-- Arrows -->
         <div class="flex gap-x-4">
           <div
+            (click)="slidePrev()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack"
           >
             <svg
@@ -48,6 +52,7 @@
             </svg>
           </div>
           <div
+            (click)="slideNext()"
             class="group flex items-center justify-center border-2 rounded-full bg-transparent text-primaryBlack border-primaryBlack py-4 px-5 w-32 mt-5 cursor-pointer transition-all duration-500 transform hover:text-primaryWhite hover:bg-primaryBlack rotate-180"
           >
             <svg
@@ -74,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden md:block w-3/4">
         <img src="assets/imgs/studio-1.webp" alt="studio image1" />
       </div>
     </div>
