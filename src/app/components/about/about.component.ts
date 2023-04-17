@@ -18,7 +18,7 @@ export class AboutComponent {
             name: 'Aaron Nzau',
             title: 'Founder and CEO',
             image:'./assets/imgs/aaron.webp',
-            social: 'linkedin'
+            social: 'https://www.linkedin.com/in/aaron-nzau-07655547/'
         },
         {
             name: 'Richard Otolo',
