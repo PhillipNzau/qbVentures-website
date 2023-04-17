@@ -43,6 +43,12 @@ export class CapitalComponent implements OnInit {
 
     // Fetch all the details element.
     details:any
+    slideNext(){        
+        this.swiper?.swiperRef.slideNext(100);
+      }
+      slidePrev(){
+        this.swiper?.swiperRef.slidePrev(100);
+      }
 
     ngOnInit() {
         this.details = document.querySelectorAll("details");

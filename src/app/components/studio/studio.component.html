@@ -86,7 +86,7 @@
 
     <div id="slider" class="mt-10">
       <div class="flex items-center justify-between">
-        <p class="font-headingExtraBold text-3xl md:text-5xl">Services</p>
+        <p class="font-headingExtraBold text-3xl md:text-5xl">Servicess</p>
         <!-- Arrows -->
         <div class="hidden gap-x-4 md:flex">
           <div
@@ -145,12 +145,12 @@
       </div>
 
       <div
-        class="mt-8 flex flex-col gap-x-0 gap-y-4 md:flex-row md:gap-y-0 md:gap-x-8"
+        class="bg-red-300 mt-8 flex flex-col gap-x-0 gap-y-4 md:flex-row md:gap-y-0 md:gap-x-8"
       >
-        <swiper #servSwiper [slidesPerView]="3" [spaceBetween]="10">
+        <swiper #servSwiper [slidesPerView]="1" [spaceBetween]="10">
           <ng-template swiperSlide *ngFor="let service of services">
             <div
-              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] md:min-h-[550px]"
+              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] min-h-full md:min-h-[550px]"
             >
               <h2 class="font-headingFont text-3xl mb-6">
                 {{ service.title }}

@@ -307,69 +307,80 @@
 <section class="px-6 md:px-20 my-12 lg:my-32">
   <div class="flex flex-col justify-center md:flex-row">
     <div
-      class="bg-primaryBlack text-primaryWhite px-4 py-20 space-y-6 flex flex-col items-center justify-between text-center text-2xl md:w-[600px]"
+      class="bg-primaryBlack text-primaryWhite px-4 py-10 space-y-6 md:text-2xl md:w-[600px]"
     >
-      <p>
-        “Working with Qbcapital has been amazing and has contributed alot to the
-        growth of our company.“
-      </p>
-
-      <div class="flex items-center flex-col">
-        <p class="font-bold">Joan Yieke</p>
-        <p>CEO, Naiparq</p>
+      <!-- the slider -->
+      <swiper #swiper [slidesPerView]="1" [spaceBetween]="50">
+        <ng-template swiperSlide *ngFor="let quote of testimonies">
+          <div
+            class="px-4 space-y-6 flex flex-col items-center justify-between text-center md:w-[550px] h-[460px] md:h-[490px]"
+          >
+            <p>
+              {{ quote.description }}
+            </p>
+            <div class="flex items-center flex-col mb-0">
+              <p class="font-bold">
+                {{ quote.name }}
+              </p>
+              <p>{{ quote.title }}</p>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+      <!-- Arrows -->
+      <div class="flex justify-center mt-6 gap-x-6">
+        <div
+          (click)="slidePrev()"
+          class="group border border-white rounded-full p-2 w-min hover:bg-primaryWhite"
+        >
+          <svg
+            class="stroke-white rotate-180 group-hover:stroke-primaryBlack h-4 w-4 md:h-6 md:w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75 12H20.25"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.5 5.25L20.25 12L13.5 18.75"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div
+          (click)="slideNext()"
+          class="group border border-white rounded-full p-2 hover:bg-primaryWhite"
+        >
+          <svg
+            class="stroke-white group-hover:stroke-primaryBlack h-4 w-4 md:h-6 md:w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.75 12H20.25"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.5 5.25L20.25 12L13.5 18.75"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </div>
     </div>
 
-    <!-- Arrows -->
-    <div class="flex mt-6 gap-x-6">
-      <div
-        class="group border border-white rounded-full p-2 w-min hover:bg-primaryWhite"
-      >
-        <svg
-          class="stroke-white rotate-180 group-hover:stroke-primaryBlack h-4 w-4 md:h-6 md:w-6"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3.75 12H20.25"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M13.5 5.25L20.25 12L13.5 18.75"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <div
-        class="group border border-white rounded-full p-2 hover:bg-primaryWhite"
-      >
-        <svg
-          class="stroke-white group-hover:stroke-primaryBlack h-4 w-4 md:h-6 md:w-6"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3.75 12H20.25"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M13.5 5.25L20.25 12L13.5 18.75"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-    </div>
-    <div class="md:-ml-1 md:min-w-1/2">
+    <div class="-ml-[2px] md:-ml-1 md:min-w-1/2">
       <img src="./assets/imgs/joan.webp" alt="Joan" />
     </div>
   </div>
