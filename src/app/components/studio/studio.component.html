@@ -6,7 +6,7 @@
   <!-- navbar -->
   <div>
     <div
-      class="z-0 xl:px-48 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
+      class="z-0 md:px-40 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
     >
       <ng-container>
         <img
@@ -178,13 +178,13 @@
     </div>
   </div>
 
-  <div class="-mt-16 md:mt-0 md:px-48 md:py-16 p-6">
-    <div class="flex justify-between gap-x-52 px-6">
+  <div class="-mt-16 md:mt-0 md:px-40 md:py-16 p-6">
+    <div class="flex justify-between gap-x-2 px-6">
       <div class="w-full md:w-1/2">
         <!-- the slider -->
-        <swiper #swiper [slidesPerView]="1" [spaceBetween]="50">
+        <swiper #swiper [slidesPerView]="1" [spaceBetween]="500">
           <ng-template swiperSlide *ngFor="let quote of quotes">
-            <div class="flex flex-col gap-y-6 md:w-[700px]">
+            <div class="flex flex-col gap-y-6">
               <h1
                 class="text-3xl md:text-6xl md:mt-36 mt-20 font-headingExtraBold uppercase"
               >
@@ -252,7 +252,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block w-3/4">
+      <div class="hidden md:block">
         <img src="assets/imgs/studio-1.webp" alt="studio image1" />
       </div>
     </div>
@@ -323,14 +323,15 @@
         <swiper
           #servSwiper
           [slidesPerView]="3"
-          [spaceBetween]="10"
-          class="hidden md:block"
+          [spaceBetween]="50"
+          [loopedSlides]="200"
+          class="hidden md:block w-full"
         >
           <ng-template swiperSlide *ngFor="let service of services">
             <div
-              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 md:w-[490px] min-h-full md:min-h-[550px]"
+              class="px-8 py-5 bg-primaryWhite rounded-3xl md:px-12 md:py-9 min-h-full md:min-h-full"
             >
-              <h2 class="font-headingFont text-3xl mb-6">
+              <h2 class="font-headingFont text-xl mb-6">
                 {{ service.title }}
               </h2>
               <p class="text-base">
@@ -365,7 +366,7 @@
   </div>
 
   <!-- Services -->
-  <section id="value" class="px-4 mb-6 md:px-48">
+  <section id="value" class="px-4 mb-6 md:px-40">
     <img
       class="w-full object-cover"
       src="./assets/imgs/studio-2.webp"

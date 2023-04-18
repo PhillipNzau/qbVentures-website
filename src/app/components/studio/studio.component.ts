@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from "../../shared/navbar/navbar.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
@@ -6,6 +6,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SwiperModule } from 'swiper/angular';
 
 import { SwiperComponent } from "swiper/angular";
+import { SwiperOptions } from 'swiper';
 
 @Component({
     selector: 'app-studio',
@@ -14,10 +15,12 @@ import { SwiperComponent } from "swiper/angular";
     styleUrls: ['./studio.component.scss'],
     imports: [CommonModule, NavbarComponent, FooterComponent, RouterLink, RouterLinkActive, SwiperModule]
 })
-export class StudioComponent {
+export class StudioComponent implements AfterViewInit {
     @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
     @ViewChild('servSwiper', { static: false }) servSwiper?: SwiperComponent;
     isMenuOpen:boolean = false;
+    config:SwiperOptions = {}
+    
    
 
     quotes = [
@@ -65,6 +68,18 @@ export class StudioComponent {
             description: "We connect entrepreneurs to investors! But prior to that we demystify aspects that are rather complex by simplifying and helping the entrepreneurs understand and adequately prepare for investments. This creates trust in the process and a shared understanding of each parties expectations thus allowing the entrepreneurs to put more focus in maximising in on investments and creating value."
         },
     ]
+
+    ngAfterViewInit(): void {
+        this.config = {
+            autoplay: {
+                delay:1000,
+            },
+            slidesPerView: 3,
+            spaceBetween:50,
+            loopedSlides:200,
+
+        }
+    }
 
     slideNext(){        
       this.swiper?.swiperRef.slideNext(100);
