@@ -31,6 +31,12 @@ export class AboutComponent {
             title: 'Principal',
             image:'./assets/imgs/purity.webp',
             social: 'https://www.linkedin.com/in/purity-k-111166a4'
+        },
+        {
+            name: 'Felix Otieno',
+            title: 'Ag Innovation Manager',
+            image:'./assets/imgs/felix.webp',
+            social: 'https://www.linkedin.com/in/felix-otieno-nrb/'
         }
     ]
 
