@@ -1,3 +1,9 @@
 .afterHover {
     @apply after:border-primaryWhite before:border-primaryWhite
 }
+.hoverHome {
+    @apply border-primaryWhite  hover:bg-primaryWhite hover:text-primaryBlack
+}
+.hoverNotHome {
+    @apply text-primaryBlack border-primaryBlack hover:bg-primaryBlack hover:text-primaryWhite
+}

@@ -1,5 +1,5 @@
 <div
-  class="z-0 xl:px-48 md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0"
+  class="z-0 md:px-[11rem] md:py-16 p-6 flex justify-between md:flex-row gap-y-8 md:gap-y-0 md:mb-24 mb-32"
 >
   <ng-container *ngIf="isHome">
     <img
@@ -134,12 +134,10 @@
       [routerLinkActiveOptions]="{ exact: true }"
     >
       <a
-        class="py-3 px-4 rounded-full font-headingFont hover:cursor-pointer"
+        class="py-3 px-4 rounded-full font-headingFont hover:cursor-pointer border hover:text-primaryBlack"
         [ngClass]="{
-          ' text-primaryBlack': isHome,
-          'bg-primaryWhite': isHome,
-          'text-primaryWhite': !isHome,
-          'bg-primaryBlack': !isHome
+          hoverHome: isHome,
+          ' hoverNotHome': !isHome
         }"
         >Get in Touch</a
       >
