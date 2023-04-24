@@ -32,6 +32,9 @@ module.exports = {
         '100%': { color: theme('colors.white') },
       },
     }),
+    screens: {
+      'ipad': '820px',
+    }
     },
   },
   plugins: [],
