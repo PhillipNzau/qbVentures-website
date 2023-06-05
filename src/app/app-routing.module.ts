@@ -27,6 +27,9 @@ const routes: Routes = [
   {
     path: 'blog', loadComponent:()=> import('./components/blog/blog.component').then(mod => mod.BlogComponent)
   },
+  {
+    path: 'blog/:id', loadComponent:()=> import('./components/selected-blog/selected-blog.component').then(mod => mod.SelectedBlogComponent)
+  },
   
   {
     path: '**', redirectTo: '', pathMatch: 'full'
