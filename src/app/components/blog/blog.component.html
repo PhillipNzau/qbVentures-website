@@ -20,17 +20,16 @@
 <section
   class="min-h-[500px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 place-content-center place-items-center md:gap-12 md:p-12"
 >
-  <ng-container *ngFor="let _ of [1, 1, 1, 1, 1, 1, 1]">
+  <ng-container *ngFor="let blog of blogs">
     <div
       class="relative rounded-2xl bg-white md:w-[367px] h-[402px] transition duration-300 shadow hover:shadow-2xl hover:cursor-pointer"
-      [routerLink]="['/blog', '1']"
+      [routerLink]="['/blog', blog.id]"
     >
       <div class="p-6 space-y-4">
-        <p class="font-bold text-lg">Heading</p>
-        <p class="text-sm">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-          iste amet reiciendis similique perferendis hic, sapiente quam tenetur
-          quae repudiandae vitae doloribus molestias.
+        <div class="blog-content" [innerHTML]="parsedContent"></div>
+        <p class="font-bold text-lg line-clamp-2">{{ blog.title }}</p>
+        <p class="text-sm line-clamp-3">
+          {{ blog.description }}
         </p>
       </div>
       <div

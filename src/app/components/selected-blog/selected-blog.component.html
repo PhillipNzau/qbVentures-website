@@ -17,7 +17,7 @@
 </section>
 
 <!-- blog section -->
-<section class="min-h-[500px] md:relative p-6 md:p-12">
+<section class="min-h-[500px] p-6 space-y-4 md:space-y-8 md:relative md:p-12">
   <div
     class="md:-mt-80 text-primaryBlack font-headingExtraBold text-7xl text-center md:h-[500px] md:w-3/4 mx-auto rounded-xl"
   >
@@ -29,42 +29,13 @@
   </div>
   <div class="md:w-3/4 mx-auto">
     <div class="space-y-2 mb-4">
-      <p class="font-bold text-3xl">Heading</p>
-      <p class="text-sm">Jan 9, 2023 By Victor Kanam</p>
+      <p class="font-bold text-3xl">{{ blog.title }}</p>
+      <p class="text-sm">Jun 5, 2023 By Qbventures</p>
     </div>
     <div class="space-y-4 text-base">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet voluptas
-        ducimus dolor sequi fugiat autem. Sed consequuntur fugit blanditiis
-        aliquam quisquam cupiditate provident temporibus. Qui mollitia maiores
-        consequatur magni numquam expedita dolore cum reiciendis, dolorum non
-        laudantium amet magnam ratione fugit consequuntur suscipit repellendus
-        culpa quas perferendis. Cupiditate, sunt obcaecati?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet voluptas
-        ducimus dolor sequi fugiat autem. Sed consequuntur fugit blanditiis
-        aliquam quisquam cupiditate provident temporibus. Qui mollitia maiores
-        consequatur magni numquam expedita dolore cum reiciendis, dolorum non
-        laudantium amet magnam ratione fugit consequuntur suscipit repellendus
-        culpa quas perferendis. Cupiditate, sunt obcaecati?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet voluptas
-        ducimus dolor sequi fugiat autem. Sed consequuntur fugit blanditiis
-        aliquam quisquam cupiditate provident temporibus. Qui mollitia maiores
-        consequatur magni numquam expedita dolore cum reiciendis, dolorum non
-        laudantium amet magnam ratione fugit consequuntur suscipit repellendus
-        culpa quas perferendis. Cupiditate, sunt obcaecati?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet voluptas
-        ducimus dolor sequi fugiat autem. Sed consequuntur fugit blanditiis
-        aliquam quisquam cupiditate provident temporibus. Qui mollitia maiores
-        consequatur magni numquam expedita dolore cum reiciendis, dolorum non
-        laudantium amet magnam ratione fugit consequuntur suscipit repellendus
-        culpa quas perferendis. Cupiditate, sunt obcaecati?
-      </p>
+      <div *ngFor="let paragraph of paragraphs">
+        <p>{{ paragraph }}</p>
+      </div>
     </div>
   </div>
 </section>
