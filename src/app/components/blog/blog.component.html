@@ -20,24 +20,22 @@
 <section
   class="min-h-[500px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 place-content-center place-items-center md:gap-12 md:p-12"
 >
-  <ng-container *ngFor="let blog of blogs">
+  <ng-container *ngFor="let blog of qbBlogs">
     <div
       class="relative rounded-2xl bg-white md:w-[367px] h-[402px] transition duration-300 shadow hover:shadow-2xl hover:cursor-pointer"
-      [routerLink]="['/blog', blog.id]"
+      [routerLink]="['/blog', blog?.id]"
     >
       <div class="p-6 space-y-4">
-        <div class="blog-content" [innerHTML]="parsedContent"></div>
-        <p class="font-bold text-lg line-clamp-2">{{ blog.title }}</p>
-        <p class="text-sm line-clamp-3">
-          {{ blog.description }}
-        </p>
+        <p class="font-bold text-lg line-clamp-2">{{ blog?.title }} as</p>
+
+        <div class="text-sm line-clamp-3" [innerHTML]="blog?.content"></div>
       </div>
       <div
         class="absolute bottom-0 left-0 w-full h-[200px] overflow-hidden rounded-b-2xl"
       >
         <img
           class="object-cover h-full w-full"
-          src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          [src]="blog?.cover_image"
           alt="blog img"
         />
       </div>

@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BlogService {
-  private blogUrl = 'src/assets/content/blog.md'; 
+  private blogUrl = 'https://pms.naiparq.co.ke:444/api/v2/blog/article/?company_name=qbventures'; 
 
   constructor(private http: HttpClient) { }
 
-  getBlogContent(): Observable<string> {
-    return this.http.get(this.blogUrl, { responseType: 'text' });
+  getBlogContent(): Observable<any> {
+    return this.http.get(this.blogUrl);
   }
 }
