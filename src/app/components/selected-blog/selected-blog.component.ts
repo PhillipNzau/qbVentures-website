@@ -14,6 +14,7 @@ import { BlogService } from 'src/app/shared/services/blog.service';
 })
 export class SelectedBlogComponent implements OnInit {
   selectedBlog:any;
+  blogSlug:string | any;
   blog:any;
   paragraphs: string[] = [];
   blogs = [
@@ -42,12 +43,23 @@ export class SelectedBlogComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe({
       next: (params)=> {
-        const id = params.get('id');
-        this.blog = this.blogs.find((blog) => {return blog.id.toString() === id });
-        this.splitIntoParagraphs()
+        this.blogSlug = params.get('id');
+        console.log('weeeeeeh',this.blogSlug);
                
       },
       error:(err) => {console.log(err);
+      }
+    })
+
+    this.blogService.getSingleBlog(this.blogSlug).subscribe({
+      next: (blogs) => {
+        this.selectedBlog = blogs
+        console.log('the selected blog', blogs);
+        
+      },
+      error: (err)=> {
+        console.error('Error getting selected blogs', err);
+        
       }
     })
     

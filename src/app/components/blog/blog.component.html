@@ -23,7 +23,7 @@
   <ng-container *ngFor="let blog of qbBlogs">
     <div
       class="relative rounded-2xl bg-white md:w-[367px] h-[402px] transition duration-300 shadow hover:shadow-2xl hover:cursor-pointer"
-      [routerLink]="['/blog', blog?.id]"
+      [routerLink]="['/blog', blog?.slug]"
     >
       <div class="p-6 space-y-4">
         <p class="font-bold text-lg line-clamp-2">{{ blog?.title }} as</p>

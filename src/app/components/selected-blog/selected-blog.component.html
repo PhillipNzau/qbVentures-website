@@ -23,19 +23,19 @@
   >
     <img
       class="object-cover h-full w-full rounded-xl"
-      src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      [src]="selectedBlog?.cover_image"
       alt="blog img"
     />
   </div>
   <div class="md:w-3/4 mx-auto">
     <div class="space-y-2 mb-4">
-      <p class="font-bold text-3xl">{{ blog.title }}</p>
-      <p class="text-sm">Jun 5, 2023 By Qbventures</p>
+      <p class="font-bold text-3xl">{{ selectedBlog?.title }}</p>
+      <p class="text-sm">
+        {{ selectedBlog?.created_at | date : "mediumDate" }} By Qbventures
+      </p>
     </div>
     <div class="space-y-4 text-base">
-      <div *ngFor="let paragraph of paragraphs">
-        <p>{{ paragraph }}</p>
-      </div>
+      <div class="text-sm" [innerHTML]="selectedBlog?.content"></div>
     </div>
   </div>
 </section>
