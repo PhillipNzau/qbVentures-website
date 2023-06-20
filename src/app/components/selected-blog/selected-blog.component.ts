@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { FooterComponent } from 'src/app/shared/footer/footer.component';
 import { NavbarComponent } from 'src/app/shared/navbar/navbar.component';
+import { BlogService } from 'src/app/shared/services/blog.service';
 
 @Component({
   selector: 'app-selected-blog',
@@ -12,6 +13,7 @@ import { NavbarComponent } from 'src/app/shared/navbar/navbar.component';
   styleUrls: ['./selected-blog.component.scss']
 })
 export class SelectedBlogComponent implements OnInit {
+  selectedBlog:any;
   blog:any;
   paragraphs: string[] = [];
   blogs = [
@@ -33,7 +35,9 @@ export class SelectedBlogComponent implements OnInit {
     
   ]
 
-  constructor(private route:ActivatedRoute){}
+  constructor(
+    private route:ActivatedRoute,
+     private blogService: BlogService){}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe({
