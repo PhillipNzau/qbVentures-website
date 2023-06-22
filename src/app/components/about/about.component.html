@@ -94,25 +94,6 @@
   </div>
 </section>
 
-<!-- Team section -->
-
-<section class="my-8 md:my-16 md:px-28">
-  <h1 class="uppercase text-center font-headingExtraBold text-3xl md:text-4xl">
-    OUR TEAM
-  </h1>
-  <div
-    class="flex flex-wrap flex-col gap-y-6 md:gap-y-12 md:flex-row items-center justify-center p-6 gap-x-6"
-  >
-    <app-team-card
-      *ngFor="let member of team"
-      [image]="member.image"
-      [name]="member.name"
-      [title]="member.title"
-      [social]="member.social"
-    ></app-team-card>
-  </div>
-</section>
-
 <!-- investors -->
 <section
   class="flex md:items-start gap-x-20 justify-center lg:px-48 my-12 md:my-48 flex-col md:flex-row py-10 px-6 md:py-0"
